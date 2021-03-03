@@ -4,7 +4,7 @@ import Logo from '../logo'
 const Header = () => (
   <header css={container}>
     <Logo />
-    <h1 css={title}>Devlog</h1>
+    <h1 css={title}>GeoPop</h1>
   </header>
 )
 

@@ -1,5 +1,5 @@
 import { css } from '@emotion/react'
-import { IoMdPlanet as Saturn } from 'react-icons/io'
+import { GiTimeBomb as Saturn } from 'react-icons/gi'
 
 const SaturnLogo = css`
   position: relative;
@@ -8,7 +8,7 @@ const SaturnLogo = css`
 
 const logoStyles = css`
   color: var(--color-text-invert);
-  font-size: 7rem;
+  font-size: 6rem;
   display: block;
   text-align: center;
   font-variant: small-caps;
@@ -16,8 +16,8 @@ const logoStyles = css`
 
 const logo = () => (
   <span css={logoStyles}>
-    DEVL
-    <Saturn css={SaturnLogo} />G
+    GEOP
+    <Saturn css={SaturnLogo} />P
   </span>
 )
 
