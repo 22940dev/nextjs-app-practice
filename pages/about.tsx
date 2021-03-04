@@ -1,8 +1,12 @@
+import Image from 'next/image'
 import Page from '@layouts/page'
 
 export default function About() {
   return (
     <Page>
+      <section>
+        <Image src="/Profile.png" width={300} height={300} />
+      </section>
       <section>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -20,14 +24,14 @@ export default function About() {
         </p>
       </section>
       <section>
-        <small>Source: </small>
+        <small>Follow on Twitter @</small>
         <a
           href="https://twitter.com/BrodasGeo"
           rel="noopener noreferrer"
           target="_blank"
           style={{
             textDecorationLine: 'underline',
-            textDecorationStyle: 'wavy',
+            textDecorationColor: 'rgb(100, 64, 100)',
           }}
         >
           Georgey V B
