@@ -4,29 +4,29 @@ import Page from '@layouts/page'
 
 const Header = css`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  padding: 0 2ch;
+  padding: 0 2rem;
 `
 
 const Bio = css`
-  margin-top: 5ch;
+  margin-top: 5rem;
 
   p {
-    max-width: 60ch;
+    max-width: 80%;
     margin: 0 auto;
   }
 
   > p + p {
-    margin-top: 3ch;
+    margin-top: 3rem;
   }
 `
 
 const Footer = css`
-  margin-top: 5ch;
-  margin-right: 5ch;
+  margin-top: 5rem;
+  margin-right: 1rem;
   text-align: right;
-  margin-bottom: 5ch;
+  margin-bottom: 5rem;
 `
 
 export default function About() {
@@ -53,7 +53,7 @@ export default function About() {
         </p>
       </section>
       <section css={Footer}>
-        <small>Follow on Twitter @</small>
+        <span>Follow on Twitter @</span>
         <a
           href="https://twitter.com/BrodasGeo"
           rel="noopener noreferrer"

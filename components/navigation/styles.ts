@@ -9,7 +9,7 @@ const navigationStyles = css`
   display: flex;
   justify-content: space-between;
   border-radius: 3px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding: 1.5ch 5ch;
   background-color: var(--page-background);
 
