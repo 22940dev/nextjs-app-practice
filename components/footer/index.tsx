@@ -1,4 +1,3 @@
-import { css } from '@emotion/react'
 import { IoLogoGithub as Github } from 'react-icons/io'
 import { IoLogoTwitter as Twitter } from 'react-icons/io'
 import { FaDev as Dev } from 'react-icons/fa'
