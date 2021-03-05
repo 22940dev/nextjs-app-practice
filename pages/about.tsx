@@ -1,12 +1,41 @@
 import { css, keyframes } from '@emotion/react'
+import { RiReactjsFill as Neutron } from 'react-icons/ri'
 import Image from 'next/image'
 import Page from '@layouts/page'
+
+const Rotate = keyframes`
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+`
+
+const reactIconStyles = css`
+  font-size: 2.2rem;
+  margin-left: 0.7rem;
+  position: relative;
+  top: 7px;
+  color: var(--color-accent);
+  animation: ${Rotate} 5s linear infinite;
+`
 
 const Header = css`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 0 2rem;
+
+  @media (max-width: 900px) {
+    font-size: 0.9rem;
+
+    h2 {
+      width: 60%;
+      text-align: center;
+    }
+  }
 `
 
 const Bio = css`
@@ -31,10 +60,18 @@ const Footer = css`
 
 export default function About() {
   return (
-    <Page>
+    <Page
+      meta={{
+        title: 'About Developer',
+        description: "Georgey's biodata",
+      }}
+    >
       <section css={Header}>
-        <Image src="/Profile.png" width={300} height={300} />
-        <h2>Georgey V B</h2>
+        <Image src="/Profile.png" width={250} height={250} />
+        <h2>
+          Georgey VB
+          <Neutron css={reactIconStyles} />
+        </h2>
       </section>
       <section css={Bio}>
         <p>
